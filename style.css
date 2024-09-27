@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: #ffffff;
+}
+header{
+    width: 98%;
+    height: 80px;
+    margin:auto;
+    /* text-align: left; */
+    display: block;
+    color: white;
+    display: block;
+    padding-top: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+header .profile{
+    width: 30px;
+    height: 30px;
+    background-image: url(usericon.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 20px;
+    font-family: sans-serif;
+}
+.search_section{
+    width: 90%;
+    height: 50vh;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 30px;
+}
+.search_section .logo{
+    font-size: 40px;
+    text-transform: capitalize;
+    user-select: none;
+    letter-spacing: 7px;
+}
+.search_section .logo span{
+    font-size: 40px;
+    color: red;
+}
+.search_section .logo::first-letter{
+    color: red;
+    font-size: 100px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+.search_section .search_bar{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+.search_section .search_bar input{
+    height: 35px;
+    width: 40%;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    text-align: left;
+    padding: 10px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.7s;
+    color: red;
+}
+.search_section .search_Icon{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+.search_section .search_Icon:active{
+    width: 32px;
+    height: 32px;
+    transform: rotate(360deg);
+}
+.search_section .search_bar input:hover{
+    width: 42%;
+    height: 36px;
+    box-shadow: 0 0 10px white;
+}
+.search_section .search_bar input::selection{
+    background-color: red;
+    color: white;
+}
+.search_section .collections{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.search_section .collections a{
+    text-decoration: none;
+    color: white;
+}
+.search_section .collections p:hover{
+    border-bottom: 1px solid red;
+    cursor: pointer;
+}
+.result_section{
+    width: 90%;
+    margin: auto;
+    height: 20px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.result_section h3{
+    color: white;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.result_section option{
+    background-color: #000000;
+    color: red;
+}
+.result_section select{
+    background-color: #000000;
+    color: white;
+}
+.contnet{
+    width: 80%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.contnet .card1, .card3{
+    background-color: rgba(255, 255, 255, 0.103);
+    height: 149px;
+    width: 27%;
+    margin: auto;
+    transition: 0.7s;
+}
+.contnet .card2{
+    background-color: rgba(241, 13, 13, 0.24);
+    height: 149px;
+    width: 40%;
+    margin: auto;
+    transition: 0.7s;
+}
+.card1:hover , .card2:hover , .card3:hover{
+    transform: scale(1.1);
+}
+
